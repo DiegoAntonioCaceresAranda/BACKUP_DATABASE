@@ -34,7 +34,7 @@ jobs:
 
       - name: Setup Supabase CLI
         if: env.BACKUP_ENABLED == 'true'
-        uses: supabase/setup-cli@v3
+        uses: supabase/setup-cli@v2
         with:
           version: 1.145.4
 

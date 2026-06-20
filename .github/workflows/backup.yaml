@@ -36,7 +36,7 @@ jobs:
         if: env.BACKUP_ENABLED == 'true'
         uses: supabase/setup-cli@v2
         with:
-          version: 1.145.4
+          version: 1.223.0
 
       - name: Create timestamp folder
         if: env.BACKUP_ENABLED == 'true'

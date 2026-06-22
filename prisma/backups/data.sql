@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict rv5jiX9tdgSIavY0AAh6s4CLUWgb13Rl2g4wrtHYW52eEMUDrWd46N8lRS9LJ6U
+-- \restrict 4onH7qdRfnpkIwupOjDWVoetdkUryc6p5qCQG1YRWpAV4HJzG06g7YF9ReJr1Wh
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -916,6 +916,7 @@ COPY "public"."password_reset_tokens" ("id", "codigo", "fecha_expiracion", "util
 21	786210	2026-06-11 15:31:16.722112	f	8
 20	261800	2026-06-11 10:30:25.713412	t	8
 22	273714	2026-06-11 15:51:30.331103	f	8
+23	620759	2026-06-21 17:09:56.050801	f	10
 \.
 
 
@@ -1407,7 +1408,7 @@ SELECT pg_catalog.setval('"public"."pagos_id_seq"', 49, true);
 -- Name: password_reset_tokens_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."password_reset_tokens_id_seq"', 22, true);
+SELECT pg_catalog.setval('"public"."password_reset_tokens_id_seq"', 23, true);
 
 
 --
@@ -1477,6 +1478,6 @@ SELECT pg_catalog.setval('"public"."ventas_id_seq"', 49, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict rv5jiX9tdgSIavY0AAh6s4CLUWgb13Rl2g4wrtHYW52eEMUDrWd46N8lRS9LJ6U
+-- \unrestrict 4onH7qdRfnpkIwupOjDWVoetdkUryc6p5qCQG1YRWpAV4HJzG06g7YF9ReJr1Wh
 
 RESET ALL;

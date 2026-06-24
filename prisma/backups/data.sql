@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict pPALJpK0nP24ISEfPtAWSukVTR9oFO6IqbeDcznvP8TM0faFCMNZRIzMuaPb8vJ
+-- \restrict xVOKqjho7eHOfxjfVzmnto7IbKoOcdspIJbIf0wSEeOek7pe9Kf5mToDGYv524X
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -492,7 +492,6 @@ COPY "public"."proveedores" ("id", "email", "nombre", "ruc", "telefono") FROM st
 12	pedidos@mdlz.com	MONDELEZ PERU S.A. (Field / Kraft)	20100057361	922334455
 13	corporativo@san-fernando.com.pe	SAN FERNANDO S.A.	20100187576	955667788
 14	logistica@inretail.pe	INRETAIL PERU S.A. (Supermercados Peruanos / Mass)	20131562916	966778899
-15	atencion@jnj.com	JOHNSON & JOHNSON DEL PERU S.A.	20100121809	911223344
 \.
 
 
@@ -1478,6 +1477,6 @@ SELECT pg_catalog.setval('"public"."ventas_id_seq"', 49, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict pPALJpK0nP24ISEfPtAWSukVTR9oFO6IqbeDcznvP8TM0faFCMNZRIzMuaPb8vJ
+-- \unrestrict xVOKqjho7eHOfxjfVzmnto7IbKoOcdspIJbIf0wSEeOek7pe9Kf5mToDGYv524X
 
 RESET ALL;

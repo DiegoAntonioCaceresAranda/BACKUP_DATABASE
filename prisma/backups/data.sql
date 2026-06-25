@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict xVOKqjho7eHOfxjfVzmnto7IbKoOcdspIJbIf0wSEeOek7pe9Kf5mToDGYv524X
+-- \restrict heFGMsog9HepAb0gdULgWqoOTaZXWZbLrpdxbEipTy9FjSZSKnY5IKrDt3cmc1k
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -216,7 +216,6 @@ COPY "public"."roles" ("id", "nombre", "descripcion") FROM stdin;
 
 COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "departamento", "direccion", "distrito", "provincia", "referencia", "telefono", "google_place_id", "latitud", "longitud", "dni_ruc", "nombre_razon_social") FROM stdin;
 2	dannapuglianini@gmail.com	$2a$10$XUxtnVv0JgChwaKZ0ysp7udU7c508XG44WhvDGQDBPEwBEp3ELmau	Danna	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-3	m4m2ad.1010@gmail.com	$2a$10$yc3Lwf2QgU7g5Jxm6WiLP.K4WAbO.noPa6xgwBLfh3HJCyaTrdsf6	Aldair	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 7	diego@nubixmarket.com	$2a$10$6x1qTj7mxjt0mBYvPZO8ieoKpP/jw8R.Hl0OJ68QwZgws7hYjRgEC	Diego	5	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 6	wilmer@nubixmarket.com	$2a$10$6bzfiWkV3d3TJUNZkxi/eu2xXLu9LYL1nlB76Wu0lRSwunSVbJ1xi	Wilmer	3	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 8	dapuglianini@gmail.com	$2a$10$jtNnaOuDPN2xv2/77fkf9.9ch.DuOa2BqNyEfcrQgDoDWEQf8fKiy	danni	2	Provincia de Lima	2W5H+JRM, Av. Carlos Izaguirre, Lima 15301, Peru	Urb las Palmeras Etapa 1	Lima	Avenida Carlos Izaguirre	963987951	ChIJ3wGVglHPBZERm6stPLdf0JA	-11.9909013	-77.07045269999999	71379139	CLAUDIA YOLANDA VILLALTA FLORES
@@ -229,6 +228,7 @@ COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "depar
 5	tomas@ejemplo.com	$2a$10$9k3jRLBvxLDm8yLub.rXWu502cwqGBV7hNszzlqJ5Q1M2TPzRQzCG	Tomas	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 13	lazercr99@gmail.com	$2a$10$2/3ZyqR99PXuaCi0B1uGceMopfjK7viwFJowY9UclryjCc7fp6/uu	Aldair2	2	Provincia de Lima	Av. Carlos Villarán 140, La Victoria 15034, Peru	Santa Catalina	Lima	Avenida Carlos Villarán 140	\N	ChIJ4aPhlVHJBZERYxq-VGJVdSo	-12.0895492	-77.0226192	\N	\N
 12	luis@gmail.com	$2a$10$3qPJbvzJUgPUWMALVLiHgenaZUCUjhiDGZeYrzQj2/8W26msNBI9u	Luis	2	Lima Province	Los Olivos, Peru	Los Olivos	Lima Province	Calle 1	\N	ChIJRYx0tiHOBZER1cTopSX65ew	-11.9594191	-77.07589229999999	\N	\N
+3	m4m2ad.1010@gmail.com	$2a$10$dhfGJ36a5Plg2d4O9qiEUuQvKGQQnuxTz0yWbZmkpbqfT4I.f05bu	Aldair	2	Provincia de Lima	Ca. Raúl Rebagliati 170, La Victoria 15034, Peru	Santa Catalina	Lima	Calle Raúl Rebagliati 170	\N	ChIJm3keHWPIBZERd-I8xX2bvFM	-12.0882096	-77.0237331	\N	\N
 \.
 
 
@@ -237,9 +237,9 @@ COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "depar
 --
 
 COPY "public"."carrito" ("id", "fecha_actualizacion", "session_token", "usuario_id") FROM stdin;
-2	2026-06-03 12:22:19.435657	\N	3
 5	2026-06-03 12:41:29.864113	\N	5
 1	2026-06-03 13:21:47.909165	\N	2
+2	2026-06-24 18:01:09.073829	\N	3
 9	2026-06-08 23:41:49.012713	\N	12
 6	2026-06-11 16:12:58.15879	\N	8
 11	2026-06-11 11:59:00.970053	\N	14
@@ -380,6 +380,7 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 120	4541548151		Gomitas Loop - Super Acidas	3	4.2	48	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955971/nubix-market/productos/zr7ubcgra6trx2gjceie.jpg	\N
 133	484511651655		Cheetos Horneados	1.5	2.5	200	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955348/nubix-market/productos/fanae2sfdx6g699grx8z.jpg	\N
 11	5047182936501	Disfruta del delicioso sabor a piña de Concordia, una bebida refrescante ideal para acompañar tus comidas y compartir en familia. Su agradable toque frutal la convierte en una excelente opción para cualquier ocasión.	Gaseosa Concordia Sabor Piña 3 L	3.8	5.2	13	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780930210/nubix-market/productos/tz3ncareubyyznbmtgvh.webp	\N
+45	4827619053847	Agua mineral natural de gran pureza y frescura. Ideal para mantener una hidratación adecuada en cualquier momento del día, gracias a su práctica presentación para llevar a donde vayas.	Agua San Mateo 600ml	1	2.2	28	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934699/nubix-market/productos/giroa2hzox4iurjzujkh.webp	\N
 134	8322315656		Cheese Tris	1.2	2.2	150	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956273/nubix-market/productos/jucxbdyegru9sphfaqfp.webp	\N
 56	6392051847749	Elaborado con granos de café seleccionados para ofrecer un aroma intenso y un sabor equilibrado. Ideal para disfrutar una taza de café de calidad de forma rápida y práctica en cualquier momento del día.	Café Instantáneo Altomayo Gourmet 150g	28.6	32.8	25	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956156/nubix-market/productos/ec2caxskkdbxluh0vsuz.jpg	\N
 87	9753108465921	Elaborada con caña de azúcar seleccionada y de sabor naturalmente agradable. Ideal para endulzar bebidas, preparar postres y diversas recetas, en una práctica presentación para el consumo familiar.	Azúcar Rubia BELL'S Bolsa 5Kg	7.2	9.5	33	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956626/nubix-market/productos/si5s8ktf4jfomz8k8jbb.jpg	\N
@@ -388,7 +389,6 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 129	515645411655		Doña Pepa	1.8	2.8	9	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958803/nubix-market/productos/qqb9vihbvy0avydqdjhf.webp	\N
 118	7251121525		Galleta Morocha - Sabor Chocolate	1.2	2	28	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955765/nubix-market/productos/qlbkxnqlzccqigii6jtg.jpg	\N
 66	7392058149637	Elaborado con leche de calidad y el delicioso sabor de una de las frutas más emblemáticas del Perú. Cremoso, nutritivo y perfecto para disfrutar en el desayuno, acompañado de frutas o cereales.	Yogurt SBELT Sabor a Lúcuma Botella 946g	4.2	4.5	27	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780941344/nubix-market/productos/bzpc5twl2gjt45enbwld.webp	\N
-45	4827619053847	Agua mineral natural de gran pureza y frescura. Ideal para mantener una hidratación adecuada en cualquier momento del día, gracias a su práctica presentación para llevar a donde vayas.	Agua San Mateo 600ml	1	2.2	29	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934699/nubix-market/productos/giroa2hzox4iurjzujkh.webp	\N
 110	0036459665	HOJUELAS DE PLÁTANO FRITAS CON SABOR A LECHE DE TIGRE 100% PIURANOS	Chifles Karinto	3.2	4.5	49	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954307/nubix-market/productos/ovqubjucjsnweth49s3p.png	\N
 111	4894984465	PALITOS ENRROLLADOS DE QUESO EXTRA PICANTE	Takis Fuego	5.2	6.9	99	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780953569/nubix-market/productos/yxfypyznvuuvtbdx71l0.jpg	\N
 112	47984846465	CHOCOLATE BLANCO CON MANÍ	Chocolate Blanco Sublime	3.2	4	19	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954731/nubix-market/productos/mpvjkt7v5oxnlrbh1azh.jpg	\N
@@ -413,15 +413,16 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 38	5382917406650	Palta de textura cremosa y sabor suave, ideal para preparar desayunos, ensaladas, guacamole y diversas recetas. Rica en grasas saludables y nutrientes esenciales, es una excelente opción para una alimentación equilibrada.	Palta Fuerte	6.5	7	30	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959530/nubix-market/productos/pzptfgnm7miyqk8c8hac.jpg	\N
 54	7461839205506	Disfruta de una cerveza de sabor equilibrado y refrescante, elaborada con una cuidadosa combinación de malta y lúpulo. Ideal para compartir en reuniones, celebraciones o momentos especiales con amigos y familiares.	Cerveza Pilsen Callao Botella Retornable 630 ml	4.5	6	20	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959637/nubix-market/productos/skndeffhjjvasainas6l.jpg	\N
 29	6472839105542	Pera fresca, jugosa y naturalmente dulce, con una textura suave y refrescante. Ideal para disfrutar como snack, en ensaladas de frutas, postres o como complemento saludable en cualquier momento del día.	Pera Fresca	2.5	3.5	27	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959292/nubix-market/productos/xfdpci4yvedrmtkxsnne.jpg	\N
-5	4839201746581	El clásico sabor refrescante en presentación de 3 litros, ideal para compartir en reuniones, celebraciones y comidas familiares. Disfrútala bien helada y vive su calidad en cada vaso.	Gaseosa Coca-Cola Sabor Original 3 L	8.5	11.9	54	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780928493/nubix-market/productos/wtt4bbualvpldtwfjyom.webp	\N
 42	9731504826671		Coco Fresco	3.7	3	19	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959658/nubix-market/productos/wws3i0qnn3ehfyspoohf.jpg	\N
 167	7750670010238		Sporage Tropical 500ml	1.8	2.5	95	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781189168/nubix-market/productos/asecm5sk5gjh5iihajeb.webp	\N
-6	7264519038427	Disfruta del sabor clásico de Coca-Cola Zero, una opción sin azúcar ideal para acompañar tus comidas o refrescarte en cualquier momento del día, con toda la intensidad y frescura que la caracteriza.	Gaseosa Coca-Cola Sin Azúcar 1.5 L	4.3	6	9	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780929518/nubix-market/productos/mtzwapxu8woko6avvdqu.webp	\N
+6	7264519038427	Disfruta del sabor clásico de Coca-Cola Zero, una opción sin azúcar ideal para acompañar tus comidas o refrescarte en cualquier momento del día, con toda la intensidad y frescura que la caracteriza.	Gaseosa Coca-Cola Sin Azúcar 1.5 L	4.3	6	6	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780929518/nubix-market/productos/mtzwapxu8woko6avvdqu.webp	\N
+5	4839201746581	El clásico sabor refrescante en presentación de 3 litros, ideal para compartir en reuniones, celebraciones y comidas familiares. Disfrútala bien helada y vive su calidad en cada vaso.	Gaseosa Coca-Cola Sabor Original 3 L	8.5	11.9	53	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780928493/nubix-market/productos/wtt4bbualvpldtwfjyom.webp	\N
 9	3175092846712		Fanta Naranja 1.5L	4.9	5.2	16	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955077/nubix-market/productos/azbuqevuclutuijmqere.jpg	\N
 166	7750670009041		Agua Cielo 1L	1.8	2.5	49	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781188905/nubix-market/productos/u9mdav5ouyophrrnkaww.webp	\N
 168	7750670244954		Agua Cielo 625ml	1	1.5	98	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781188960/nubix-market/productos/npc7q4iiq4sesfogqkqj.webp	\N
 26	3905718264038	Plátano de seda de sabor dulce y textura suave, ideal para consumir como snack, preparar batidos, postres o complementar una alimentación equilibrada. Una fuente natural de energía perfecta para toda la familia.	Plátano de Seda	2.2	3.5	27	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959183/nubix-market/productos/ef0bwap9rf9tstfrzcsy.jpg	\N
 115	2158411313		Chocolate Princesa	3	4	24	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958591/nubix-market/productos/zphx7nse3ziv3iabxc3m.jpg	\N
+7	1958374620184	Agua pura y refrescante en una práctica presentación familiar. Ideal para la hidratación diaria, preparar alimentos y acompañar un estilo de vida saludable, brindando frescura y bienestar para toda la familia.	Agua San Luis Sin Gas Botella 7 L	3	6.19	5	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934744/nubix-market/productos/ltfjv55c3wrjmsyadprk.webp	\N
 70	2748391056829		Natillas Pura Crema	2.5	3.5	28	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780951455/nubix-market/productos/oarx0urayedolvorlaah.jpg	\N
 31	2537604918276		Melón Coquito	10.4	12	23	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959331/nubix-market/productos/zzzwevcxejfvny4lawf5.jpg	\N
 30	9182746501835	Mango de pulpa carnosa, sin hebras y con un dulzor intenso y aromático. Ideal para disfrutar fresco, preparar postres, helados artesanales o dar un toque exótico a ensaladas y ceviches.	Mango Kent	4.5	6.79	38	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959314/nubix-market/productos/ftedc3s0ouwt8e61jc6s.jpg	\N
@@ -432,7 +433,6 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 69	5601948372058	Queso fresco elaborado con leche seleccionada, de sabor suave y textura firme. Ideal para desayunos, sándwiches, ensaladas y diversas preparaciones, aportando calidad y frescura para toda la familia.	Queso Fresco Pasteurizado Laive 300 g	11.5	15.9	21	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780952712/nubix-market/productos/iubo7fc1ft5dhprgb3kg.jpg	\N
 10	9628401753946	Kola Real 3L. Producto de calidad ideal para consumo diario. Elaborado o seleccionado bajo estándares adecuados para brindar una experiencia satisfactoria, sabor agradable y excelente rendimiento según su categoría.	Kola Real 3L	5.93	7.9	12	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955462/nubix-market/productos/pqvl05grpehauqtqcu3q.png	\N
 119	7750168000697		Mini Chips - Chips Ahoy!	2	2.5	49	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954176/nubix-market/productos/tv77awsc4kd4do8x1gfj.jpg	\N
-7	1958374620184	Agua pura y refrescante en una práctica presentación familiar. Ideal para la hidratación diaria, preparar alimentos y acompañar un estilo de vida saludable, brindando frescura y bienestar para toda la familia.	Agua San Luis Sin Gas Botella 7 L	3	6.19	7	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934744/nubix-market/productos/ltfjv55c3wrjmsyadprk.webp	\N
 25	7148203956471	Manzana fresca de textura crujiente y sabor equilibrado entre dulce y ácido. Ideal para consumir sola, preparar postres, ensaladas o complementar una alimentación saludable con su aporte natural de fibra y nutrientes.	Manzana Delicia	3.5	4.9	26	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959072/nubix-market/productos/xneqtmwprcqehzqpkqee.jpg	\N
 \.
 
@@ -442,24 +442,7 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 --
 
 COPY "public"."carrito_items" ("id", "cantidad", "carrito_id", "producto_id") FROM stdin;
-22	1	2	49
-24	1	2	95
-25	1	2	45
-35	1	2	16
-37	1	2	81
-38	1	2	36
-39	1	2	30
-40	1	2	32
-41	1	2	43
-43	1	2	37
-44	1	2	26
-45	1	2	25
-46	1	2	27
-47	1	2	39
-49	1	2	92
-50	1	2	51
 58	1	5	45
-17	4	2	99
 340	3	6	122
 341	3	6	7
 342	1	6	15
@@ -518,6 +501,7 @@ COPY "public"."detalle_compras" ("id", "cantidad", "precio_unitario", "subtotal"
 COPY "public"."favoritos" ("id", "producto_id", "usuario_id") FROM stdin;
 167	7	1
 244	25	4
+345	6	3
 174	5	8
 175	7	8
 176	6	8
@@ -530,19 +514,15 @@ COPY "public"."favoritos" ("id", "producto_id", "usuario_id") FROM stdin;
 266	7	4
 267	6	4
 268	25	1
+364	5	1
 271	67	1
 275	9	4
 205	12	1
 207	15	1
 208	11	1
-48	45	3
-50	81	3
 280	14	1
 281	13	1
 214	9	1
-55	99	3
-56	51	3
-57	39	3
 282	16	1
 216	11	4
 217	67	4
@@ -771,6 +751,22 @@ COPY "public"."notificaciones" ("id", "fecha", "leido", "mensaje", "tipo", "usua
 190	2026-06-19 00:50:40.674277	f	Nuevo pedido web creado (ID #49).	pedido	1
 191	2026-06-19 00:50:41.049638	f	Pago confirmado para el pedido #49.	pago	1
 192	2026-06-19 00:50:41.426761	t	Pedido Fast Lane #49 registrado. Código de recojo: C0430CFC	recojo	1
+193	2026-06-24 16:53:04.417497	f	Nuevo pedido web creado (ID #50).	pedido	1
+194	2026-06-24 16:53:04.604408	f	Pago confirmado para el pedido #50.	pago	1
+195	2026-06-24 16:53:04.78561	f	Pedido Fast Lane #50 registrado. Código de recojo: 73234D75	recojo	1
+196	2026-06-24 16:56:31.302184	f	Nuevo pedido web creado (ID #51).	pedido	1
+197	2026-06-24 16:56:31.476488	f	Pago confirmado para el pedido #51.	pago	1
+198	2026-06-24 16:56:31.653732	f	Pedido Fast Lane #51 registrado. Código de recojo: C1CC011B	recojo	1
+199	2026-06-24 16:58:30.260092	f	Stock bajo detectado para Agua San Luis Sin Gas Botella 7 L (restante: 5).	stock	1
+200	2026-06-24 16:58:30.79905	f	Nuevo pedido web creado (ID #52).	pedido	1
+201	2026-06-24 16:58:30.965291	f	Pago confirmado para el pedido #52.	pago	1
+202	2026-06-24 16:58:31.131239	f	Pedido Fast Lane #52 registrado. Código de recojo: 77357A28	recojo	1
+203	2026-06-24 17:57:24.382783	f	Nuevo pedido web creado (ID #53).	pedido	1
+204	2026-06-24 17:57:24.559031	f	Pago confirmado para el pedido #53.	pago	1
+205	2026-06-24 17:57:24.730621	f	Pedido Fast Lane #53 registrado. Código de recojo: 208638C6	recojo	1
+206	2026-06-24 18:00:55.105716	f	Nuevo pedido web creado (ID #54).	pedido	1
+207	2026-06-24 18:00:55.279632	f	Pago confirmado para el pedido #54.	pago	1
+208	2026-06-24 18:00:55.456959	f	Pedido Fast Lane #54 registrado. Código de recojo: 9F30DDB6	recojo	1
 \.
 
 
@@ -828,6 +824,11 @@ COPY "public"."ventas" ("id", "canal", "codigo_recojo", "costo_envio", "direccio
 47	PRESENCIAL	\N	0	\N	\N	\N	\N	APROBADO	ENTREGADO	2026-06-11	1.63	EFECTIVO	\N	\N	\N	12.5	TICKET	PRESENCIAL	14.13	\N	1
 48	WEB	AFB8E76E	0	\N	\N	71379139	dapuglianini@gmail.com	APROBADO	ENTREGADO	2026-06-11	5.35	YAPE	CLAUDIA YOLANDA VILLALTA FLORES	\N	\N	41.17	BOLETA	FAST_LANE	46.52	8	\N
 49	WEB	C0430CFC	0	\N	\N	60746801	admin@nubixmarket.com	APROBADO	PENDIENTE	2026-06-19	2.89	YAPE	LEONARDO DANIEL CERNA COPAJA	\N	\N	22.2	BOLETA	FAST_LANE	25.09	\N	\N
+50	WEB	73234D75	0	\N	\N	40215225	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-06-24	3.13	TARJETA	TORIBIO CARDEÑA RAMOS	\N	\N	24.09	BOLETA	FAST_LANE	27.22	3	\N
+51	WEB	C1CC011B	0	\N	CAL. NATALIO SANCHEZ NRO. 125 URB. SANTA BEATRIZ LIMA LIMA LIMA	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-06-24	0.78	TARJETA	\N	UNIVERSIDAD TECNOLOGICA DEL PERU S.A.C. O UTP S.A.C.	20462509236	6	FACTURA	FAST_LANE	6.78	3	\N
+52	WEB	77357A28	0	\N	CAL. NATALIO SANCHEZ NRO. 125 URB. SANTA BEATRIZ LIMA LIMA LIMA	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-06-24	0.8	TARJETA	\N	UNIVERSIDAD TECNOLOGICA DEL PERU S.A.C. O UTP S.A.C.	20462509236	6.19	FACTURA	FAST_LANE	6.99	3	\N
+53	WEB	208638C6	0	\N	AV. CARLOS VILLARAN NRO. 140 URB. SANTA CATALINA LIMA LIMA LA VICTORIA	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-06-24	0.29	TARJETA	\N	BANCO INTERNACIONAL DEL PERU-INTERBANK	20100053455	2.2	FACTURA	FAST_LANE	2.49	3	\N
+54	WEB	9F30DDB6	0	\N	AV. CARLOS VILLARAN NRO. 140 URB. SANTA CATALINA LIMA LIMA LA VICTORIA	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-06-24	0.78	TARJETA	\N	BANCO INTERNACIONAL DEL PERU-INTERBANK	20100053455	6	FACTURA	FAST_LANE	6.78	3	\N
 \.
 
 
@@ -885,6 +886,11 @@ COPY "public"."pagos" ("id", "estado_pago", "fecha_pago", "metodo_pago", "monto"
 47	APROBADO	2026-06-11 11:01:51.960696	EFECTIVO	14.13	47
 48	APROBADO	2026-06-11 16:11:48.9911	YAPE	46.52	48
 49	APROBADO	2026-06-19 00:50:38.749877	YAPE	25.09	49
+50	APROBADO	2026-06-24 16:53:03.534086	TARJETA	27.22	50
+51	APROBADO	2026-06-24 16:56:30.775624	TARJETA	6.78	51
+52	APROBADO	2026-06-24 16:58:30.358496	TARJETA	6.99	52
+53	APROBADO	2026-06-24 17:57:23.851946	TARJETA	2.49	53
+54	APROBADO	2026-06-24 18:00:54.559933	TARJETA	6.78	54
 \.
 
 
@@ -916,6 +922,7 @@ COPY "public"."password_reset_tokens" ("id", "codigo", "fecha_expiracion", "util
 20	261800	2026-06-11 10:30:25.713412	t	8
 22	273714	2026-06-11 15:51:30.331103	f	8
 23	620759	2026-06-21 17:09:56.050801	f	10
+24	846370	2026-06-24 10:31:34.022522	t	3
 \.
 
 
@@ -1224,6 +1231,13 @@ COPY "public"."venta_detalles" ("id", "cantidad", "precio_unitario", "subtotal",
 230	1	6	6	39	49
 231	3	2	6	154	49
 232	4	2	8	117	49
+233	1	11.9	11.9	5	50
+234	1	6	6	6	50
+235	1	6.19	6.19	7	50
+236	1	6	6	6	51
+237	1	6.19	6.19	7	52
+238	1	2.2	2.2	45	53
+239	1	6	6	6	54
 \.
 
 
@@ -1281,6 +1295,11 @@ COPY "public"."ventas_entrega" ("id", "codigo_recojo", "direccion", "distrito", 
 47	\N	\N	\N	\N	PRESENCIAL	47
 48	AFB8E76E	\N	\N	\N	FAST_LANE	48
 49	C0430CFC	\N	\N	\N	FAST_LANE	49
+50	73234D75	\N	\N	\N	FAST_LANE	50
+51	C1CC011B	\N	\N	\N	FAST_LANE	51
+52	77357A28	\N	\N	\N	FAST_LANE	52
+53	208638C6	\N	\N	\N	FAST_LANE	53
+54	9F30DDB6	\N	\N	\N	FAST_LANE	54
 \.
 
 
@@ -1358,7 +1377,7 @@ SELECT pg_catalog.setval('"public"."carrito_id_seq"', 11, true);
 -- Name: carrito_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 345, true);
+SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 352, true);
 
 
 --
@@ -1386,28 +1405,28 @@ SELECT pg_catalog.setval('"public"."detalle_compras_id_seq"', 1, false);
 -- Name: favoritos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 343, true);
+SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 403, true);
 
 
 --
 -- Name: notificaciones_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."notificaciones_id_seq"', 192, true);
+SELECT pg_catalog.setval('"public"."notificaciones_id_seq"', 208, true);
 
 
 --
 -- Name: pagos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."pagos_id_seq"', 49, true);
+SELECT pg_catalog.setval('"public"."pagos_id_seq"', 54, true);
 
 
 --
 -- Name: password_reset_tokens_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."password_reset_tokens_id_seq"', 23, true);
+SELECT pg_catalog.setval('"public"."password_reset_tokens_id_seq"', 24, true);
 
 
 --
@@ -1456,27 +1475,27 @@ SELECT pg_catalog.setval('"public"."usuario_id_seq"', 14, true);
 -- Name: venta_detalles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."venta_detalles_id_seq"', 232, true);
+SELECT pg_catalog.setval('"public"."venta_detalles_id_seq"', 239, true);
 
 
 --
 -- Name: ventas_entrega_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."ventas_entrega_id_seq"', 49, true);
+SELECT pg_catalog.setval('"public"."ventas_entrega_id_seq"', 54, true);
 
 
 --
 -- Name: ventas_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."ventas_id_seq"', 49, true);
+SELECT pg_catalog.setval('"public"."ventas_id_seq"', 54, true);
 
 
 --
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict xVOKqjho7eHOfxjfVzmnto7IbKoOcdspIJbIf0wSEeOek7pe9Kf5mToDGYv524X
+-- \unrestrict heFGMsog9HepAb0gdULgWqoOTaZXWZbLrpdxbEipTy9FjSZSKnY5IKrDt3cmc1k
 
 RESET ALL;

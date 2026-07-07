@@ -226,7 +226,7 @@ COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "depar
 12	luis@gmail.com	$2a$10$3qPJbvzJUgPUWMALVLiHgenaZUCUjhiDGZeYrzQj2/8W26msNBI9u	Luis	2	Lima Province	Los Olivos, Peru	Los Olivos	Lima Province	Calle 1	\N	ChIJRYx0tiHOBZER1cTopSX65ew	-11.9594191	-77.07589229999999	\N	\N
 3	m4m2ad.1010@gmail.com	$2a$10$FEDDIX4rzxtM5ri36KgxE.DVTM7q0n.Y/wMJ5.A.NnqY7dZ9YuhGS	Aldair	2	Provincia de Lima	Ca. Raúl Rebagliati 170, La Victoria 15034, Peru	Santa Catalina	Lima	Calle Raúl Rebagliati 170	\N	ChIJm3keHWPIBZERd-I8xX2bvFM	-12.0882096	-77.0237331	\N	\N
 13	lazercr99@gmail.com	$2a$10$.zJCh0GD3ZfJNY9r9z6f1e9Si31zKInAaTH4RviAcFCtwuasXiSfC	Aldair2	2	Provincia de Lima	Av. Carlos Villarán 140, La Victoria 15034, Peru	Santa Catalina	Lima	Avenida Carlos Villarán 140	\N	ChIJ4aPhlVHJBZERYxq-VGJVdSo	-12.0895492	-77.0226192	\N	\N
-8	dapuglianini@gmail.com	$2a$10$uB4YeztSJZnt.YiUfNK1cO2YS/f0DCWS9rd/xQd73TWXllBT.ajUW	danni	2	Provincia de Lima	2W5H+JRM, Av. Carlos Izaguirre, Lima 15301, Peru	Urb las Palmeras Etapa 1	Lima	Avenida Carlos Izaguirre	963987951	ChIJ3wGVglHPBZERm6stPLdf0JA	-11.9909013	-77.0704527	71379139	CLAUDIA YOLANDA VILLALTA FLORES
+8	dapuglianini@gmail.com	$2a$10$uB4YeztSJZnt.YiUfNK1cO2YS/f0DCWS9rd/xQd73TWXllBT.ajUW	danni	2	Provincia de Lima	2W5H+JRM, Av. Carlos Izaguirre, Lima 15301, Peru	Urb las Palmeras Etapa 1	Lima	Avenida Carlos Izaguirre	963987951	ChIJ3wGVglHPBZERm6stPLdf0JA	-11.9909013	-77.0704527	72344898	DIEGO ALEJANDRO CARBAJAL ALLACI
 \.
 
 
@@ -240,7 +240,7 @@ COPY "public"."carrito" ("id", "fecha_actualizacion", "session_token", "usuario_
 3	2026-07-05 16:59:15.077983	\N	1
 2	2026-07-06 01:02:45.447936	\N	3
 9	2026-06-08 23:41:49.012713	\N	12
-6	2026-06-11 16:12:58.15879	\N	8
+6	2026-07-05 23:00:00.571455	\N	8
 11	2026-06-11 11:59:00.970053	\N	14
 8	2026-06-05 18:58:30.26485	\N	10
 4	2026-06-11 08:35:24.270238	\N	4
@@ -445,10 +445,6 @@ COPY "public"."carrito_items" ("id", "cantidad", "carrito_id", "producto_id") FR
 356	1	3	15
 357	1	3	25
 58	1	5	45
-340	3	6	122
-341	3	6	7
-342	1	6	15
-343	1	6	25
 344	1	11	5
 345	1	11	6
 323	1	4	10
@@ -504,11 +500,6 @@ COPY "public"."favoritos" ("id", "producto_id", "usuario_id") FROM stdin;
 167	7	1
 244	25	4
 345	6	3
-174	5	8
-175	7	8
-176	6	8
-178	12	8
-179	11	8
 72	45	5
 263	12	4
 264	15	4
@@ -531,12 +522,6 @@ COPY "public"."favoritos" ("id", "producto_id", "usuario_id") FROM stdin;
 218	13	4
 219	16	4
 220	8	4
-283	25	8
-284	67	8
-285	15	8
-286	9	8
-287	65	8
-288	68	8
 229	8	1
 230	5	4
 293	67	13
@@ -550,9 +535,7 @@ COPY "public"."favoritos" ("id", "producto_id", "usuario_id") FROM stdin;
 320	14	13
 322	13	13
 324	9	13
-327	122	8
 328	18	14
-330	35	8
 \.
 
 
@@ -1421,7 +1404,7 @@ SELECT pg_catalog.setval('"public"."detalle_compras_id_seq"', 1, false);
 -- Name: favoritos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 408, true);
+SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 433, true);
 
 
 --

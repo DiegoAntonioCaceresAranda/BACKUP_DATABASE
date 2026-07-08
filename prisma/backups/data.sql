@@ -213,7 +213,6 @@ COPY "public"."roles" ("id", "nombre", "descripcion") FROM stdin;
 --
 
 COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "departamento", "direccion", "distrito", "provincia", "referencia", "telefono", "google_place_id", "latitud", "longitud", "dni_ruc", "nombre_razon_social") FROM stdin;
-2	dannapuglianini@gmail.com	$2a$10$XUxtnVv0JgChwaKZ0ysp7udU7c508XG44WhvDGQDBPEwBEp3ELmau	Danna	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 7	diego@nubixmarket.com	$2a$10$6x1qTj7mxjt0mBYvPZO8ieoKpP/jw8R.Hl0OJ68QwZgws7hYjRgEC	Diego	5	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 6	wilmer@nubixmarket.com	$2a$10$6bzfiWkV3d3TJUNZkxi/eu2xXLu9LYL1nlB76Wu0lRSwunSVbJ1xi	Wilmer	3	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 9	chris@gmail.com	$2a$10$9gfQP0O9zIF/hB7ixikUFedaH4Rb6uwhZ6zYcuaf6IREa4inJOVSS	Chris Perez	2	\N	Calle Broer	\N	\N	\N	912545588	\N	\N	\N	\N	\N
@@ -227,6 +226,7 @@ COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "depar
 3	m4m2ad.1010@gmail.com	$2a$10$FEDDIX4rzxtM5ri36KgxE.DVTM7q0n.Y/wMJ5.A.NnqY7dZ9YuhGS	Aldair	2	Provincia de Lima	Ca. Raúl Rebagliati 170, La Victoria 15034, Peru	Santa Catalina	Lima	Calle Raúl Rebagliati 170	\N	ChIJm3keHWPIBZERd-I8xX2bvFM	-12.0882096	-77.0237331	\N	\N
 13	lazercr99@gmail.com	$2a$10$.zJCh0GD3ZfJNY9r9z6f1e9Si31zKInAaTH4RviAcFCtwuasXiSfC	Aldair2	2	Provincia de Lima	Av. Carlos Villarán 140, La Victoria 15034, Peru	Santa Catalina	Lima	Avenida Carlos Villarán 140	\N	ChIJ4aPhlVHJBZERYxq-VGJVdSo	-12.0895492	-77.0226192	\N	\N
 8	dapuglianini@gmail.com	$2a$10$uB4YeztSJZnt.YiUfNK1cO2YS/f0DCWS9rd/xQd73TWXllBT.ajUW	danni	2	Provincia de Lima	2W5H+JRM, Av. Carlos Izaguirre, Lima 15301, Peru	Urb las Palmeras Etapa 1	Lima	Avenida Carlos Izaguirre	963987951	ChIJ3wGVglHPBZERm6stPLdf0JA	-11.9909013	-77.0704527	72344898	DIEGO ALEJANDRO CARBAJAL ALLACI
+2	dannapuglianini@gmail.com	$2a$10$XUxtnVv0JgChwaKZ0ysp7udU7c508XG44WhvDGQDBPEwBEp3ELmau	Danna	2	\N	Lima Metropolitan Area, Peru	Lima	\N	Mercado Pipa	\N	ChIJRSf-4q9-BpERSrLfZY4lsSw	-12.0779798	-76.8720961	\N	\N
 \.
 
 
@@ -235,8 +235,8 @@ COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "depar
 --
 
 COPY "public"."carrito" ("id", "fecha_actualizacion", "session_token", "usuario_id") FROM stdin;
+1	2026-07-07 17:44:32.563318	\N	2
 5	2026-06-03 12:41:29.864113	\N	5
-1	2026-06-03 13:21:47.909165	\N	2
 3	2026-07-05 16:59:15.077983	\N	1
 2	2026-07-06 01:02:45.447936	\N	3
 9	2026-06-08 23:41:49.012713	\N	12
@@ -285,10 +285,12 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 85	6418293051764		Arroz Costeño Extra	2.8	4.5	20	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956540/nubix-market/productos/gzwwexiocquv3pgmvgfb.jpg	\N
 53	5917602844731		Chicha Morada	3.5	4.2	39	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780960564/nubix-market/productos/gghk5a0ebdgbcenxyjjv.jpg	\N
 81	9384751206983		Queso Gouda Laive	12.4	15.9	20	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780945149/nubix-market/productos/byb9kmd1lgviwcsw5yno.jpg	\N
+64	6842739501187		Tampico 3.L	1.8	12	39	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780960491/nubix-market/productos/f6cop2fdbpabtofwrzsj.jpg	\N
 67	1058734926601	Crema de leche de textura suave y gran versatilidad, ideal para preparar postres, salsas y diversas recetas. Aporta cremosidad y un delicioso sabor que realza tus preparaciones favoritas.	Crema de Leche Nestlé Lata 160 g	7	8.5	34	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780936591/nubix-market/productos/nbtwky1xgxxhbs7iohjf.webp	\N
 36	8753204916842		Sandía	7.2	9.9	18	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959493/nubix-market/productos/gpcv9qoksjci5sw7uddl.jpg	\N
 41	4062857193648		Chirimoya Cumbe	6.6	4	24	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959647/nubix-market/productos/v9cehg8gezjomtj4ueek.jpg	\N
 12	2783649501827	Disfruta de la pureza del agua mineral con finas burbujas refrescantes. Su práctica presentación es ideal para acompañar comidas, brindar una sensación de frescura y disfrutar en cualquier momento del día.	Agua Mineral San Mateo Con Gas 600 ml	1.5	2.2	19	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934687/nubix-market/productos/tyjak978zasegnf7b0zt.jpg	\N
+58	4071528396640		Cápsulas de té verde	3.2	3.5	29	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959819/nubix-market/productos/yleeiruwsfansf3snrye.webp	\N
 13	6319057482614	Bebida rehidratante con electrolitos que ayuda a recuperar líquidos y minerales perdidos durante la actividad física. Ideal para mantener una adecuada hidratación antes, durante y después del ejercicio.	Sporade 1.5 L	5.5	6.5	40	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780930697/nubix-market/productos/rkq6pgg3fkcj2o8a43aa.webp	\N
 24	5327819402649		Big Cola 3L	4.3	5.5	30	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957336/nubix-market/productos/xzxaycpoyi5lxxrhtl4i.jpg	\N
 46	7150392846612		Frugos del Valle Durazno	2.2	2.8	30	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957463/nubix-market/productos/m0lm8avmazwf0snqwa0o.jpg	\N
@@ -298,10 +300,8 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 50	1092847563820		Agua Sparkling 500ml	2	2.9	40	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958858/nubix-market/productos/cqq3frcmfrqcpmuwiizz.jpg	\N
 37	1947603825718		Kiwi Verde	7.5	7.9	30	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959512/nubix-market/productos/ipigshetraotxi2ldjvl.jpg	\N
 40	8619472053814	Mandarina de sabor dulce y jugoso, fácil de pelar y perfecta para disfrutar en cualquier momento del día. Rica en vitamina C, es una opción refrescante y saludable para toda la familia.	Mandarina Sin Pepa	3.2	4.8	40	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959633/nubix-market/productos/aslto2vduhzcgv2dfcm3.jpg	\N
-58	4071528396640		Cápsulas de té verde	3.2	3.5	30	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959819/nubix-market/productos/yleeiruwsfansf3snrye.webp	\N
 59	7639204815573		Kombucha Jengibre	8.2	11.9	30	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780960121/nubix-market/productos/lgukvsxsa30tvck95ekx.jpg	\N
 60	1548392766408		Limonada Lista Fria 7up	2.4	3.9	40	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780960357/nubix-market/productos/hwqvb6woqagphw1n8j5q.jpg	\N
-64	6842739501187		Tampico 3.L	1.8	12	40	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780960491/nubix-market/productos/f6cop2fdbpabtofwrzsj.jpg	\N
 108	3256412365478	Cerveza refrescante y de sabor equilibrado, ideal para compartir en reuniones, celebraciones y momentos especiales. Su práctica presentación permite disfrutarla bien fría en cualquier ocasión.	Cerveza Cristal Lata 355 ml	3.1	4.2	25	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934791/nubix-market/productos/jl69nloo278ayyqomoh3.png	\N
 99	1904765839201		Conserva Durazno Arica	3.2	4.8	0	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957607/nubix-market/productos/bzstqwszr4h6xteetjup.jpg	\N
 48	2438751096481	Una infusión de sabor suave y aroma delicado, ideal para disfrutar en cualquier momento del día. Perfecto para acompañar tus momentos de descanso con una bebida cálida y reconfortante.	Te Herbal Manzanilla	2.4	3.2	17	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957634/nubix-market/productos/bgno4xoxyhnjbkd1g5rs.jpg	\N
@@ -309,6 +309,7 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 20	9812746503816	Agua de manantial envasada con pureza natural y minerales esenciales. Ideal para la hidratación diaria de toda la familia, ofreciendo frescura y bienestar en una práctica presentación para cualquier ocasión.	Agua Mineral San Mateo Sin Gas 2.5 L	2.8	3.9	40	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780935018/nubix-market/productos/ggts5djwtyj00acxbq41.webp	\N
 65	4829163051742		Queso Edam Laive	10.3	12.9	21	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780951707/nubix-market/productos/atn7xtzkajaa4tew5zph.jpg	\N
 62	5701928463846	Vino blanco elaborado con uvas seleccionadas, de aroma fresco y notas frutales. Ideal para disfrutar como aperitivo o acompañar pescados, mariscos y otras preparaciones especiales.	Vino Blanco Tabernero Gran Blanco Botella 750 ml	19.5	27.9	20	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780935059/nubix-market/productos/m666ornyiyenfqgc22rf.webp	\N
+94	9126384750917		Avena Quaker 900g	4.3	6.9	29	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957095/nubix-market/productos/i3nx8pg9xz3qre6czuem.jpg	\N
 83	7450192836450	Yogurt griego de textura cremosa y consistencia firme, elaborado con leche seleccionada. Ideal para disfrutar en desayunos, acompañar frutas y cereales o incorporar en diversas preparaciones saludables.	Yogur Griego Danlac Natural Frasco 900 g	10.5	12.5	30	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780936511/nubix-market/productos/qwkwekej82ru6j6lx11m.webp	\N
 127	5646451631566		Doritos - Sabor Queso	1.6	2.8	69	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954867/nubix-market/productos/jqwwuinpfa5potj3qkjs.jpg	\N
 73	3475609182743		Queso Parmesano Laive	15.4	18.9	23	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780946308/nubix-market/productos/sljygafaqmaele6zalwb.jpg	\N
@@ -319,7 +320,6 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 131	656498456165		Chocman	1.7	3	28	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955226/nubix-market/productos/km0rcyd3akpl2luokkwr.jpg	\N
 91	1705849237619		Lentejas Costeño 500g	3.3	4.9	34	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956835/nubix-market/productos/lq1tfgq6jk6lwagswptf.jpg	\N
 93	5391084726195		Harina Blanca Flor	2.4	3.4	30	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957030/nubix-market/productos/tie4ypfpi6pzcfflu8yj.jpg	\N
-94	9126384750917		Avena Quaker 900g	4.3	6.9	30	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957095/nubix-market/productos/i3nx8pg9xz3qre6czuem.jpg	\N
 96	8047619238504		Mayonesa Alacena 475g	4.3	5.9	35	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957297/nubix-market/productos/piidiadaudwzsbkutwco.jpg	\N
 101	9471820657348		Maizena Duryea	2.4	3.2	30	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957707/nubix-market/productos/zo9vkp25gynhiggkwxt6.jpg	\N
 137	848415644874		Casino - Sabor Choco	1.2	2.5	130	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958865/nubix-market/productos/nqpo6onicgqfgqfyjpjv.webp	\N
@@ -327,23 +327,23 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 14	8451720395648	Disfruta del refrescante sabor lima-limón de Sprite. Su fórmula burbujeante es ideal para calmar la sed y acompañar cualquier ocasión. Perfecta para mantener siempre fría en casa y compartir en familia.	Gaseosa Sprite Botella 2.25 L	5.3	7.5	25	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780930031/nubix-market/productos/yx2crpdsuvzxkfffzx2y.jpg	\N
 152	2123156454		Inka Chips - Sabor Sal de Mar	3.5	5	39	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959153/nubix-market/productos/bdrwq3rbkb6uicqhx55y.webp	\N
 154	5646984568		Galleta Animalitos	1.2	2	6	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959245/nubix-market/productos/kgdvsxxc6fxfbe2ijrgk.webp	\N
+140	1541654656		Papas Kryspo - Sabor Original	6.5	7.5	59	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958936/nubix-market/productos/piom0vnbl5fekzwdj7np.webp	\N
 144	5456456465		Chocolate Trianguilo	4	5	0	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959011/nubix-market/productos/lwked4thgigapozsyc0k.webp	\N
 157	6874156868		Club Social - Sabor Jamon	3	4.2	69	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959309/nubix-market/productos/vk3lt8cdsnfkipnynpgt.webp	\N
 156	461241785		Tor tees Picante	1.5	2.5	19	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959294/nubix-market/productos/t0mqlhrnb2isa9p9lxos.webp	\N
 124	655156165		Gomitas Ambrosito - Ositos	1.5	3	69	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958684/nubix-market/productos/guy1ckkrjoskatfggtvd.jpg	\N
 123	411215656		Inka Chips - Jalapeño	1.8	3.6	51	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954504/nubix-market/productos/a1ifvsk3kwmp0fyiu0rs.jpg	\N
-55	2854719036482	Alimento granulado elaborado con una combinación de cacao, vitaminas y minerales. Ideal para disfrutar en bebidas frías o calientes, aportando energía y un delicioso sabor a chocolate para toda la familia.	Alimento Granulado Milo Activ-Go 380g	19.8	21.9	30	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934844/nubix-market/productos/nvxagscr8magzce93blc.webp	\N
+55	2854719036482	Alimento granulado elaborado con una combinación de cacao, vitaminas y minerales. Ideal para disfrutar en bebidas frías o calientes, aportando energía y un delicioso sabor a chocolate para toda la familia.	Alimento Granulado Milo Activ-Go 380g	19.8	21.9	29	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934844/nubix-market/productos/nvxagscr8magzce93blc.webp	\N
 79	8746201958374	Textura suave y sabor tradicional, ideal para untar en panes, preparar desayunos y complementar diversas recetas. Práctica y versátil para el uso diario en tu cocina.	Margarina MANTY Clásica Pote 300g	7.2	9.2	40	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780936376/nubix-market/productos/zcrbnycnfl4wearckug1.webp	\N
-27	8261495730284	Crujientes, dulces y sin pepas, estas uvas son un snack saludable ideal para toda la familia. Perfectas para los niños y para acompañar tablas de quesos.	Uva Verde Sin Pepa	6	8.9	37	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959219/nubix-market/productos/argxtaim1ycjjawsdzx7.jpg	\N
 44	6503921847415	Cereza Bing de gran tamaño, piel brillante y sabor intensamente dulce. Su pulpa firme y jugosa la convierte en una opción perfecta para disfrutar fresca, acompañar postres o dar un toque elegante a tablas de frutas y quesos.	Cereza Bing	4.8	6.4	14	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959680/nubix-market/productos/dnu7qp1xeaebwx3iee1r.jpg	\N
 117	154541553153		Obsesion de Chocolate	1	2	12	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954041/nubix-market/productos/j1ub8rep9hhxopeuzapx.jpg	\N
+103	8264501937846	Alta calidad y dulzor equilibrado, ideal para endulzar bebidas, preparar postres, repostería y diversas recetas. Práctica presentación para el uso diario en el hogar.	Azúcar Blanca BELL'S Bolsa 2Kg	6.5	9	29	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957811/nubix-market/productos/jj6jmz3eohdwkkl0pqph.jpg	\N
+27	8261495730284	Crujientes, dulces y sin pepas, estas uvas son un snack saludable ideal para toda la familia. Perfectas para los niños y para acompañar tablas de quesos.	Uva Verde Sin Pepa	6	8.9	36	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959219/nubix-market/productos/argxtaim1ycjjawsdzx7.jpg	\N
 77	4309182756406	Elaborado con leche de calidad y el delicioso sabor de la fresa. Cremoso, nutritivo y perfecto para disfrutar en el desayuno, como merienda o acompañado de frutas y cereales.	Yogurt Gloria sabor fresa 946 g	3.8	4.2	40	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780945408/nubix-market/productos/o2tqs0oa8f0cc1hjgzpj.jpg	\N
 88	3569182746503	Elaborada con trigo de calidad para lograr una textura firme y excelente cocción. Ideal para preparar una gran variedad de recetas de pasta, acompañadas de tus salsas favoritas.	Pasta Seca de Trigo Spaghetti Don Vittorio	2.2	3.8	25	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956699/nubix-market/productos/ne70wvapitgs5sqdrdlz.jpg	\N
 139	531154156416		Papi Ricas - Sabor Pollo a la Brasa	2.4	5	20	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958917/nubix-market/productos/sh9obbdhcjwm9vgjdwce.webp	\N
 92	6842019573806	Frijol Canario Costeño, seleccionado por su excelente calidad, textura cremosa y sabor tradicional. Ideal para preparar guisos, menestras y diversas recetas caseras, aportando nutrición y el auténtico sabor de la cocina peruana.	Frijol Canario Costeño	8.5	10.4	29	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956957/nubix-market/productos/kyntobuyavjuiqqufmi9.jpg	\N
-103	8264501937846	Alta calidad y dulzor equilibrado, ideal para endulzar bebidas, preparar postres, repostería y diversas recetas. Práctica presentación para el uso diario en el hogar.	Azúcar Blanca BELL'S Bolsa 2Kg	6.5	9	30	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957811/nubix-market/productos/jj6jmz3eohdwkkl0pqph.jpg	\N
 104	5791038264957	Concentrado en forma sólida y listo para usar. Ideal para dar sabor a sopas, guisos, arroces y diversas recetas de manera práctica y rápida.	Cubo de Caldo Maggi	1	1.5	40	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957887/nubix-market/productos/o2ghslwcbmi8ovzlrduo.jpg	\N
-140	1541654656		Papas Kryspo - Sabor Original	6.5	7.5	60	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958936/nubix-market/productos/piom0vnbl5fekzwdj7np.webp	\N
 147	154955863		Lays Ondas Picante	1.5	2.8	59	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959046/nubix-market/productos/srep1wmbv9tcof0ylqo5.webp	\N
 150	6521852288		Frutos Secos - Villa Natura	6.9	8	80	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959127/nubix-market/productos/dfzol2v7oan6xm4hapri.webp	\N
 113	87846513216	GALLETAS SALADAS RELLENAS CON CREMA SABOR A QUESO	Galleta Ritz - Sabor Queso	3	4.5	9	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955256/nubix-market/productos/hfmnd2goypaveqduoxwv.jpg	\N
@@ -390,12 +390,11 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 110	0036459665	HOJUELAS DE PLÁTANO FRITAS CON SABOR A LECHE DE TIGRE 100% PIURANOS	Chifles Karinto	3.2	4.5	49	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954307/nubix-market/productos/ovqubjucjsnweth49s3p.png	\N
 111	4894984465	PALITOS ENRROLLADOS DE QUESO EXTRA PICANTE	Takis Fuego	5.2	6.9	99	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780953569/nubix-market/productos/yxfypyznvuuvtbdx71l0.jpg	\N
 112	47984846465	CHOCOLATE BLANCO CON MANÍ	Chocolate Blanco Sublime	3.2	4	19	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954731/nubix-market/productos/mpvjkt7v5oxnlrbh1azh.jpg	\N
-90	4938271059640	Elaborado con cortes seleccionados de atún de textura firme y sabor natural. Ideal para ensaladas, sándwiches, pastas y diversas preparaciones, brindando practicidad y una excelente fuente de proteína para tus comidas.	Atún Florida Filete en Trozos	4.6	5.9	40	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956783/nubix-market/productos/xyzv5c38veudtbsr3hgg.jpg	\N
-98	7583946102958	Elaborada con fruta seleccionada para ofrecer un sabor delicioso y una textura suave. Ideal para acompañar panes, tostadas, postres y diversas preparaciones en cualquier momento del día.	Mermelada Gloria 1 kg	13.2	15.9	30	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957551/nubix-market/productos/lpd6tjsnnzigm20odqsx.jpg	\N
-102	3159608472013		Leche en Polvo Gloria	6.5	8.9	30	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957760/nubix-market/productos/gm8j0bexbdnp659j1yeg.jpg	\N
 95	2675901847362		Salsa Tomate Alacena	1.3	2.8	22	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957175/nubix-market/productos/g97rashhjqq4mkukbrfp.jpg	\N
 43	2846719305586	Maracuyá fresco de aroma intenso y sabor tropical entre dulce y ácido. Ideal para preparar jugos, postres, salsas y cócteles, aportando un toque refrescante y exótico a tus recetas.	Maracuyá	2.5	3.5	29	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959669/nubix-market/productos/eidtb4ceh4hj5rvminth.jpg	\N
-100	6029183746509		Vinagre Blanco Florida 625ml	1.3	2.5	35	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957653/nubix-market/productos/uo66nxbtr4hbkphlkedr.jpg	\N
+102	3159608472013		Leche en Polvo Gloria	6.5	8.9	29	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957760/nubix-market/productos/gm8j0bexbdnp659j1yeg.jpg	\N
+98	7583946102958	Elaborada con fruta seleccionada para ofrecer un sabor delicioso y una textura suave. Ideal para acompañar panes, tostadas, postres y diversas preparaciones en cualquier momento del día.	Mermelada Gloria 1 kg	13.2	15.9	29	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957551/nubix-market/productos/lpd6tjsnnzigm20odqsx.jpg	\N
+90	4938271059640	Elaborado con cortes seleccionados de atún de textura firme y sabor natural. Ideal para ensaladas, sándwiches, pastas y diversas preparaciones, brindando practicidad y una excelente fuente de proteína para tus comidas.	Atún Florida Filete en Trozos	4.6	5.9	39	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780956783/nubix-market/productos/xyzv5c38veudtbsr3hgg.jpg	\N
 116	45412315646		Galleta Picaras - Sabor Clásico	2	3.5	198	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958626/nubix-market/productos/c2phihquwvf64yxzzxgv.webp	\N
 51	8745619302845	Formulada para ayudar a reponer líquidos y electrolitos durante la actividad física. Su refrescante sabor a mora la convierte en una opción ideal para mantenerte hidratado antes, durante y después del ejercicio.	Bebida Rehidratante Powerade Mora Botella 600 mL	2.2	3.5	20	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958678/nubix-market/productos/amdtzhtzwsefzhtmxiel.jpg	\N
 138	41515646565		Beso de Moza - Caja Original	7	10	60	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958899/nubix-market/productos/nmakwcmemcvb6mx6e69k.webp	\N
@@ -411,20 +410,21 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 38	5382917406650	Palta de textura cremosa y sabor suave, ideal para preparar desayunos, ensaladas, guacamole y diversas recetas. Rica en grasas saludables y nutrientes esenciales, es una excelente opción para una alimentación equilibrada.	Palta Fuerte	6.5	7	30	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959530/nubix-market/productos/pzptfgnm7miyqk8c8hac.jpg	\N
 54	7461839205506	Disfruta de una cerveza de sabor equilibrado y refrescante, elaborada con una cuidadosa combinación de malta y lúpulo. Ideal para compartir en reuniones, celebraciones o momentos especiales con amigos y familiares.	Cerveza Pilsen Callao Botella Retornable 630 ml	4.5	6	20	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959637/nubix-market/productos/skndeffhjjvasainas6l.jpg	\N
 29	6472839105542	Pera fresca, jugosa y naturalmente dulce, con una textura suave y refrescante. Ideal para disfrutar como snack, en ensaladas de frutas, postres o como complemento saludable en cualquier momento del día.	Pera Fresca	2.5	3.5	27	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959292/nubix-market/productos/xfdpci4yvedrmtkxsnne.jpg	\N
-6	7264519038427	Disfruta del sabor clásico de Coca-Cola Zero, una opción sin azúcar ideal para acompañar tus comidas o refrescarte en cualquier momento del día, con toda la intensidad y frescura que la caracteriza.	Gaseosa Coca-Cola Sin Azúcar 1.5 L	4.3	6	5	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780929518/nubix-market/productos/mtzwapxu8woko6avvdqu.webp	\N
+6	7264519038427	Disfruta del sabor clásico de Coca-Cola Zero, una opción sin azúcar ideal para acompañar tus comidas o refrescarte en cualquier momento del día, con toda la intensidad y frescura que la caracteriza.	Gaseosa Coca-Cola Sin Azúcar 1.5 L	4.3	6	3	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780929518/nubix-market/productos/mtzwapxu8woko6avvdqu.webp	\N
 42	9731504826671		Coco Fresco	3.7	3	19	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959658/nubix-market/productos/wws3i0qnn3ehfyspoohf.jpg	\N
 167	7750670010238		Sporage Tropical 500ml	1.8	2.5	95	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781189168/nubix-market/productos/asecm5sk5gjh5iihajeb.webp	\N
-5	4839201746581	El clásico sabor refrescante en presentación de 3 litros, ideal para compartir en reuniones, celebraciones y comidas familiares. Disfrútala bien helada y vive su calidad en cada vaso.	Gaseosa Coca-Cola Sabor Original 3 L	8.5	11.9	53	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780928493/nubix-market/productos/wtt4bbualvpldtwfjyom.webp	\N
+100	6029183746509		Vinagre Blanco Florida 625ml	1.3	2.5	34	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957653/nubix-market/productos/uo66nxbtr4hbkphlkedr.jpg	\N
+5	4839201746581	El clásico sabor refrescante en presentación de 3 litros, ideal para compartir en reuniones, celebraciones y comidas familiares. Disfrútala bien helada y vive su calidad en cada vaso.	Gaseosa Coca-Cola Sabor Original 3 L	8.5	11.9	51	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780928493/nubix-market/productos/wtt4bbualvpldtwfjyom.webp	\N
 9	3175092846712		Fanta Naranja 1.5L	4.9	5.2	16	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955077/nubix-market/productos/azbuqevuclutuijmqere.jpg	\N
 166	7750670009041		Agua Cielo 1L	1.8	2.5	49	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781188905/nubix-market/productos/u9mdav5ouyophrrnkaww.webp	\N
 168	7750670244954		Agua Cielo 625ml	1	1.5	98	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781188960/nubix-market/productos/npc7q4iiq4sesfogqkqj.webp	\N
-26	3905718264038	Plátano de seda de sabor dulce y textura suave, ideal para consumir como snack, preparar batidos, postres o complementar una alimentación equilibrada. Una fuente natural de energía perfecta para toda la familia.	Plátano de Seda	2.2	3.5	27	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959183/nubix-market/productos/ef0bwap9rf9tstfrzcsy.jpg	\N
+28	1059384726617	Fresas frescas de color rojo intenso, sabor dulce y gran jugosidad. Ideales para consumir solas, preparar jugos, postres, ensaladas o acompañar yogures y cereales, aportando frescura y nutrientes a tu alimentación diaria.	Fresa Fresca	5.8	8.5	27	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959246/nubix-market/productos/xth7vqqshanymdrk15vi.jpg	\N
 115	2158411313		Chocolate Princesa	3	4	24	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958591/nubix-market/productos/zphx7nse3ziv3iabxc3m.jpg	\N
-7	1958374620184	Agua pura y refrescante en una práctica presentación familiar. Ideal para la hidratación diaria, preparar alimentos y acompañar un estilo de vida saludable, brindando frescura y bienestar para toda la familia.	Agua San Luis Sin Gas Botella 7 L	3	6.19	5	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934744/nubix-market/productos/ltfjv55c3wrjmsyadprk.webp	\N
+7	1958374620184	Agua pura y refrescante en una práctica presentación familiar. Ideal para la hidratación diaria, preparar alimentos y acompañar un estilo de vida saludable, brindando frescura y bienestar para toda la familia.	Agua San Luis Sin Gas Botella 7 L	3	6.19	4	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934744/nubix-market/productos/ltfjv55c3wrjmsyadprk.webp	\N
 70	2748391056829		Natillas Pura Crema	2.5	3.5	28	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780951455/nubix-market/productos/oarx0urayedolvorlaah.jpg	\N
 31	2537604918276		Melón Coquito	10.4	12	23	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959331/nubix-market/productos/zzzwevcxejfvny4lawf5.jpg	\N
 30	9182746501835	Mango de pulpa carnosa, sin hebras y con un dulzor intenso y aromático. Ideal para disfrutar fresco, preparar postres, helados artesanales o dar un toque exótico a ensaladas y ceviches.	Mango Kent	4.5	6.79	38	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959314/nubix-market/productos/ftedc3s0ouwt8e61jc6s.jpg	\N
-28	1059384726617	Fresas frescas de color rojo intenso, sabor dulce y gran jugosidad. Ideales para consumir solas, preparar jugos, postres, ensaladas o acompañar yogures y cereales, aportando frescura y nutrientes a tu alimentación diaria.	Fresa Fresca	5.8	8.5	28	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959246/nubix-market/productos/xth7vqqshanymdrk15vi.jpg	\N
+26	3905718264038	Plátano de seda de sabor dulce y textura suave, ideal para consumir como snack, preparar batidos, postres o complementar una alimentación equilibrada. Una fuente natural de energía perfecta para toda la familia.	Plátano de Seda	2.2	3.5	26	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959183/nubix-market/productos/ef0bwap9rf9tstfrzcsy.jpg	\N
 72	6194827501936		Yogurt Griego Natural	7.3	9.9	27	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780946568/nubix-market/productos/fvpj92dlfhturvjhjjz9.jpg	\N
 74	9901847362051	Leche especialmente formulada para apoyar el crecimiento infantil, enriquecida con vitaminas y minerales esenciales. Ideal para complementar una alimentación balanceada, aportando nutrición y energía en cada etapa del desarrollo.	Leche Evaporada Gloria Niños Lata 395 g	3.6	4.7	22	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780944552/nubix-market/productos/oj0jmdnt0vhizrqpwub3.jpg	\N
 75	1529038475618	Yogurt Kéfir Natural de textura cremosa y sabor suave, elaborado mediante fermentación natural. Ideal para disfrutar en el desayuno, acompañado de frutas y cereales, o como una opción nutritiva para cualquier momento del día.	Yogurt Kéfir Natural	5.4	8.5	47	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780943254/nubix-market/productos/z5c6tgpsh3ez1sjlozyc.jpg	\N
@@ -526,6 +526,15 @@ COPY "public"."favoritos" ("id", "producto_id", "usuario_id") FROM stdin;
 230	5	4
 293	67	13
 296	6	13
+443	103	2
+444	109	2
+445	110	2
+446	111	2
+447	108	2
+448	102	2
+449	113	2
+450	114	2
+451	115	2
 308	7	13
 310	5	13
 312	25	13
@@ -756,6 +765,16 @@ COPY "public"."notificaciones" ("id", "fecha", "leido", "mensaje", "tipo", "usua
 210	2026-07-06 01:02:43.945592	f	Nuevo pedido web creado (ID #55).	pedido	1
 211	2026-07-06 01:02:44.366687	f	Pago confirmado para el pedido #55.	pago	1
 212	2026-07-06 01:02:44.766845	f	Pedido Fast Lane #55 registrado. Código de recojo: 90E71364	recojo	1
+213	2026-07-07 16:20:08.489814	f	Stock bajo detectado para Gaseosa Coca-Cola Sin Azúcar 1.5 L (restante: 4).	stock	1
+214	2026-07-07 16:20:08.888181	f	Stock bajo detectado para Agua San Luis Sin Gas Botella 7 L (restante: 4).	stock	1
+215	2026-07-07 16:20:10.305098	f	Nuevo pedido web creado (ID #56).	pedido	1
+216	2026-07-07 16:20:10.501422	f	Pago confirmado para el pedido #56.	pago	1
+217	2026-07-07 16:20:10.709174	f	Pedido Fast Lane #56 registrado. Código de recojo: 59DE939B	recojo	1
+218	2026-07-07 17:43:41.950096	f	Stock bajo detectado para Gaseosa Coca-Cola Sin Azúcar 1.5 L (restante: 3).	stock	1
+219	2026-07-07 17:43:47.603184	f	Nuevo pedido web creado (ID #57).	pedido	1
+220	2026-07-07 17:43:47.811277	f	Pago confirmado para el pedido #57.	pago	1
+221	2026-07-07 17:46:40.828246	f	Estado del pedido #57 actualizado a EN_CAMINO.	pedido	1
+222	2026-07-07 17:46:44.827076	f	Estado del pedido #56 actualizado a ENTREGADO.	pedido	1
 \.
 
 
@@ -819,6 +838,8 @@ COPY "public"."ventas" ("id", "canal", "codigo_recojo", "costo_envio", "direccio
 53	WEB	208638C6	0	\N	AV. CARLOS VILLARAN NRO. 140 URB. SANTA CATALINA LIMA LIMA LA VICTORIA	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-06-24	0.29	TARJETA	\N	BANCO INTERNACIONAL DEL PERU-INTERBANK	20100053455	2.2	FACTURA	FAST_LANE	2.49	3	\N
 54	WEB	9F30DDB6	0	\N	AV. CARLOS VILLARAN NRO. 140 URB. SANTA CATALINA LIMA LIMA LA VICTORIA	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-06-24	0.78	TARJETA	\N	BANCO INTERNACIONAL DEL PERU-INTERBANK	20100053455	6	FACTURA	FAST_LANE	6.78	3	\N
 55	WEB	90E71364	0	\N	Ca. Raúl Rebagliati 170, La Victoria 15034, Peru	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-07-06	0.78	TARJETA	\N	Aldair	12351353525	6	FACTURA	FAST_LANE	6.78	3	\N
+57	WEB	\N	0	Lima Metropolitan Area, Peru	AV. JAVIER PRADO ESTE NRO. 6210 INT. 1201 URB. RIVERA DE MONTERRICO LIMA LIMA LA MOLINA	\N	tambo@gmail.com	APROBADO	EN_CAMINO	2026-07-07	14.94	TARJETA	\N	TIENDAS TAMBO S.A.C.	20563529378	114.9	FACTURA	DELIVERY	129.84	2	\N
+56	WEB	59DE939B	0	\N	\N	41578459	dannapuglianini@gmail.com	APROBADO	ENTREGADO	2026-07-07	5.46	YAPE	DANNA ABAD PUGLIANINI	\N	\N	41.99	BOLETA	FAST_LANE	47.45	2	\N
 \.
 
 
@@ -882,6 +903,8 @@ COPY "public"."pagos" ("id", "estado_pago", "fecha_pago", "metodo_pago", "monto"
 53	APROBADO	2026-06-24 17:57:23.851946	TARJETA	2.49	53
 54	APROBADO	2026-06-24 18:00:54.559933	TARJETA	6.78	54
 55	APROBADO	2026-07-06 01:02:42.767653	TARJETA	6.78	55
+56	APROBADO	2026-07-07 16:20:09.388459	YAPE	47.45	56
+57	APROBADO	2026-07-07 17:43:45.184469	TARJETA	129.84	57
 \.
 
 
@@ -1236,6 +1259,24 @@ COPY "public"."venta_detalles" ("id", "cantidad", "precio_unitario", "subtotal",
 238	1	2.2	2.2	45	53
 239	1	6	6	6	54
 240	1	6	6	6	55
+241	1	11.9	11.9	5	56
+242	1	6	6	6	56
+243	1	6.19	6.19	7	56
+244	1	8.9	8.9	102	56
+245	1	9	9	103	56
+246	1	6	6	6	57
+247	1	7.5	7.5	140	57
+248	1	15.9	15.9	98	57
+249	1	2.5	2.5	100	57
+250	1	6.9	6.9	94	57
+251	1	5.9	5.9	90	57
+252	1	21.9	21.9	55	57
+253	1	12	12	64	57
+254	1	3.5	3.5	26	57
+255	1	8.9	8.9	27	57
+256	1	8.5	8.5	28	57
+257	1	3.5	3.5	58	57
+258	1	11.9	11.9	5	57
 \.
 
 
@@ -1299,6 +1340,8 @@ COPY "public"."ventas_entrega" ("id", "codigo_recojo", "direccion", "distrito", 
 53	208638C6	\N	\N	\N	FAST_LANE	53
 54	9F30DDB6	\N	\N	\N	FAST_LANE	54
 55	90E71364	\N	\N	\N	FAST_LANE	55
+56	59DE939B	\N	\N	\N	FAST_LANE	56
+57	\N	Lima Metropolitan Area, Peru	LA MOLINA	TIENDA TAMBO	DELIVERY	57
 \.
 
 
@@ -1376,7 +1419,7 @@ SELECT pg_catalog.setval('"public"."carrito_id_seq"', 11, true);
 -- Name: carrito_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 357, true);
+SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 379, true);
 
 
 --
@@ -1404,21 +1447,21 @@ SELECT pg_catalog.setval('"public"."detalle_compras_id_seq"', 1, false);
 -- Name: favoritos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 433, true);
+SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 451, true);
 
 
 --
 -- Name: notificaciones_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."notificaciones_id_seq"', 212, true);
+SELECT pg_catalog.setval('"public"."notificaciones_id_seq"', 222, true);
 
 
 --
 -- Name: pagos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."pagos_id_seq"', 55, true);
+SELECT pg_catalog.setval('"public"."pagos_id_seq"', 57, true);
 
 
 --
@@ -1474,21 +1517,21 @@ SELECT pg_catalog.setval('"public"."usuario_id_seq"', 14, true);
 -- Name: venta_detalles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."venta_detalles_id_seq"', 240, true);
+SELECT pg_catalog.setval('"public"."venta_detalles_id_seq"', 258, true);
 
 
 --
 -- Name: ventas_entrega_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."ventas_entrega_id_seq"', 55, true);
+SELECT pg_catalog.setval('"public"."ventas_entrega_id_seq"', 57, true);
 
 
 --
 -- Name: ventas_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."ventas_id_seq"', 55, true);
+SELECT pg_catalog.setval('"public"."ventas_id_seq"', 57, true);
 
 
 --

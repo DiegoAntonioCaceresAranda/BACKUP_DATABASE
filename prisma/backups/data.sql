@@ -236,9 +236,9 @@ COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "depar
 
 COPY "public"."carrito" ("id", "fecha_actualizacion", "session_token", "usuario_id") FROM stdin;
 1	2026-07-07 17:44:32.563318	\N	2
+2	2026-07-08 02:12:46.270672	\N	3
 5	2026-06-03 12:41:29.864113	\N	5
 3	2026-07-05 16:59:15.077983	\N	1
-2	2026-07-06 01:02:45.447936	\N	3
 9	2026-06-08 23:41:49.012713	\N	12
 6	2026-07-05 23:00:00.571455	\N	8
 11	2026-06-11 11:59:00.970053	\N	14
@@ -1419,7 +1419,7 @@ SELECT pg_catalog.setval('"public"."carrito_id_seq"', 11, true);
 -- Name: carrito_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 379, true);
+SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 380, true);
 
 
 --

@@ -215,18 +215,19 @@ COPY "public"."roles" ("id", "nombre", "descripcion") FROM stdin;
 COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "departamento", "direccion", "distrito", "provincia", "referencia", "telefono", "google_place_id", "latitud", "longitud", "dni_ruc", "nombre_razon_social") FROM stdin;
 7	diego@nubixmarket.com	$2a$10$6x1qTj7mxjt0mBYvPZO8ieoKpP/jw8R.Hl0OJ68QwZgws7hYjRgEC	Diego	5	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 6	wilmer@nubixmarket.com	$2a$10$6bzfiWkV3d3TJUNZkxi/eu2xXLu9LYL1nlB76Wu0lRSwunSVbJ1xi	Wilmer	3	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+14	adilsoncarden04@gmail.com	$2a$10$25BC4X4frxkBOd88XrlxYuCtDUcm0Gq0Cwdgxe6gJXQRjtn.jZ.cq	Roberto Acuña	2	Provincia de Lima	Av. Alfredo Mendiola 6377, Los Olivos 15304, Peru	Urb Santa Luisa Etapa 2	Lima	Avenida Alfredo Mendiola 6377	\N	ChIJ1zL1d9jRBZER6w_04eifsY0	-11.9528902	-77.0701949	\N	\N
 9	chris@gmail.com	$2a$10$9gfQP0O9zIF/hB7ixikUFedaH4Rb6uwhZ6zYcuaf6IREa4inJOVSS	Chris Perez	2	\N	Calle Broer	\N	\N	\N	912545588	\N	\N	\N	\N	\N
-14	adilsoncarden04@gmail.com	$2a$10$9bcypdkkghaxzAy/pnJWW.sPtARS7qTFVwIgqxsz2LaP.vVSCWa7O	Roberto Acuña	2	Provincia de Lima	Av. Alfredo Mendiola 6377, Los Olivos 15304, Peru	Urb Santa Luisa Etapa 2	Lima	Avenida Alfredo Mendiola 6377	\N	ChIJ1zL1d9jRBZER6w_04eifsY0	-11.9528902	-77.07019489999999	\N	\N
 10	wearydiegor@gmail.com	$2a$10$oPacZd2AJcY9VWRSQ/ygNezQRaIw2koM3o1FtZszqXVk3SCi/W4Km	Juan Espinoza	2	Lima	Lima	Carabayllo	Lima	\N	956291978	\N	\N	\N	\N	\N
 1	admin@nubixmarket.com	$2a$12$lFJoEjCELFenkcnsQHK60enZmgvxb48UXodCWFRrZbiwev7H7Lh7u	ADMIN	1	\N	MzElt-My House	Lima	\N	\N	\N	\N	\N	\N	\N	\N
 11	cuentwilmer@gmail.com	$2a$10$tlMjKO200dLhxx0rWci/XOzy/bHpazTh5SnOSRttWJWC.EZMl8tPe	wilmer	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 4	x.userprivate.2023@gmail.com	$2a$10$f7GogjxDbi6P1TBg/2jsdOqW9B7DU..h3dhHJCwTNhex0CQzG9yOe	Adilson	2	Provincia de Lima	Av. de las Artes Sur 260, San Borja 15036, Peru	Urb San Borja	Lima	Avenida de las Artes Sur 260	980678355	ChIJV59KudnHBZERhtQLtc05IBM	-12.0966861	-77.0060066	77539383	ADILSON ALDAIR CARDEÑA CUSI
 5	tomas@ejemplo.com	$2a$10$9k3jRLBvxLDm8yLub.rXWu502cwqGBV7hNszzlqJ5Q1M2TPzRQzCG	Tomas	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 12	luis@gmail.com	$2a$10$3qPJbvzJUgPUWMALVLiHgenaZUCUjhiDGZeYrzQj2/8W26msNBI9u	Luis	2	Lima Province	Los Olivos, Peru	Los Olivos	Lima Province	Calle 1	\N	ChIJRYx0tiHOBZER1cTopSX65ew	-11.9594191	-77.07589229999999	\N	\N
-3	m4m2ad.1010@gmail.com	$2a$10$FEDDIX4rzxtM5ri36KgxE.DVTM7q0n.Y/wMJ5.A.NnqY7dZ9YuhGS	Aldair	2	Provincia de Lima	Ca. Raúl Rebagliati 170, La Victoria 15034, Peru	Santa Catalina	Lima	Calle Raúl Rebagliati 170	\N	ChIJm3keHWPIBZERd-I8xX2bvFM	-12.0882096	-77.0237331	\N	\N
 13	lazercr99@gmail.com	$2a$10$.zJCh0GD3ZfJNY9r9z6f1e9Si31zKInAaTH4RviAcFCtwuasXiSfC	Aldair2	2	Provincia de Lima	Av. Carlos Villarán 140, La Victoria 15034, Peru	Santa Catalina	Lima	Avenida Carlos Villarán 140	\N	ChIJ4aPhlVHJBZERYxq-VGJVdSo	-12.0895492	-77.0226192	\N	\N
 8	dapuglianini@gmail.com	$2a$10$uB4YeztSJZnt.YiUfNK1cO2YS/f0DCWS9rd/xQd73TWXllBT.ajUW	danni	2	Provincia de Lima	2W5H+JRM, Av. Carlos Izaguirre, Lima 15301, Peru	Urb las Palmeras Etapa 1	Lima	Avenida Carlos Izaguirre	963987951	ChIJ3wGVglHPBZERm6stPLdf0JA	-11.9909013	-77.0704527	72344898	DIEGO ALEJANDRO CARBAJAL ALLACI
 2	dannapuglianini@gmail.com	$2a$10$XUxtnVv0JgChwaKZ0ysp7udU7c508XG44WhvDGQDBPEwBEp3ELmau	Danna	2	\N	Lima Metropolitan Area, Peru	Lima	\N	Mercado Pipa	\N	ChIJRSf-4q9-BpERSrLfZY4lsSw	-12.0779798	-76.8720961	\N	\N
+15	andre5856545@gmail.com	$2a$10$iPAM/yH7AAPBgBqdR0wiy.mOeY4Fau3VlUi.XLun3kc9d7YzuLJeW	Andre	2	Junín	VALLE REAL, Pje. Los Chasquis, Huancayo 12007, Peru	Barrio 3 Esquinas	Huancayo	Pasaje Los Chasquis	\N	ChIJCW0QcACXDpERwNpTeSYJdAk	-12.0515115	-75.21121629999999	\N	\N
+3	m4m2ad.1010@gmail.com	$2a$10$.J/DyXC1lVoKelr/Bz46ruNdcopVXSlHeTeBO9L5kjFON/fsS4uZq	Aldair	2	Provincia de Lima	Ca. Raúl Rebagliati 170, La Victoria 15034, Peru	Santa Catalina	Lima	Calle Raúl Rebagliati 170	\N	ChIJm3keHWPIBZERd-I8xX2bvFM	-12.0882096	-77.0237331	\N	\N
 \.
 
 
@@ -236,8 +237,9 @@ COPY "public"."usuario" ("id", "email", "password", "username", "rol_id", "depar
 
 COPY "public"."carrito" ("id", "fecha_actualizacion", "session_token", "usuario_id") FROM stdin;
 1	2026-07-07 17:44:32.563318	\N	2
-2	2026-07-08 02:12:46.270672	\N	3
 5	2026-06-03 12:41:29.864113	\N	5
+12	2026-07-14 09:37:04.705521	\N	15
+2	2026-07-14 11:18:19.437362	\N	3
 3	2026-07-05 16:59:15.077983	\N	1
 9	2026-06-08 23:41:49.012713	\N	12
 6	2026-07-05 23:00:00.571455	\N	8
@@ -325,16 +327,16 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 137	848415644874		Casino - Sabor Choco	1.2	2.5	130	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958865/nubix-market/productos/nqpo6onicgqfgqfyjpjv.webp	\N
 141	8489456454656		Galleta Picaras - Sabor Fresa Pasion	2	3.5	48	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959422/nubix-market/productos/bhnpbudswhxlref7cxrx.webp	\N
 14	8451720395648	Disfruta del refrescante sabor lima-limón de Sprite. Su fórmula burbujeante es ideal para calmar la sed y acompañar cualquier ocasión. Perfecta para mantener siempre fría en casa y compartir en familia.	Gaseosa Sprite Botella 2.25 L	5.3	7.5	25	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780930031/nubix-market/productos/yx2crpdsuvzxkfffzx2y.jpg	\N
-152	2123156454		Inka Chips - Sabor Sal de Mar	3.5	5	39	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959153/nubix-market/productos/bdrwq3rbkb6uicqhx55y.webp	\N
 154	5646984568		Galleta Animalitos	1.2	2	6	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959245/nubix-market/productos/kgdvsxxc6fxfbe2ijrgk.webp	\N
 140	1541654656		Papas Kryspo - Sabor Original	6.5	7.5	59	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958936/nubix-market/productos/piom0vnbl5fekzwdj7np.webp	\N
 144	5456456465		Chocolate Trianguilo	4	5	0	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959011/nubix-market/productos/lwked4thgigapozsyc0k.webp	\N
 157	6874156868		Club Social - Sabor Jamon	3	4.2	69	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959309/nubix-market/productos/vk3lt8cdsnfkipnynpgt.webp	\N
 156	461241785		Tor tees Picante	1.5	2.5	19	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959294/nubix-market/productos/t0mqlhrnb2isa9p9lxos.webp	\N
 124	655156165		Gomitas Ambrosito - Ositos	1.5	3	69	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958684/nubix-market/productos/guy1ckkrjoskatfggtvd.jpg	\N
-123	411215656		Inka Chips - Jalapeño	1.8	3.6	51	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954504/nubix-market/productos/a1ifvsk3kwmp0fyiu0rs.jpg	\N
 55	2854719036482	Alimento granulado elaborado con una combinación de cacao, vitaminas y minerales. Ideal para disfrutar en bebidas frías o calientes, aportando energía y un delicioso sabor a chocolate para toda la familia.	Alimento Granulado Milo Activ-Go 380g	19.8	21.9	29	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934844/nubix-market/productos/nvxagscr8magzce93blc.webp	\N
+123	7750526002707		Inka Chips - Jalapeño	1.8	3.6	51	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954504/nubix-market/productos/a1ifvsk3kwmp0fyiu0rs.jpg	\N
 79	8746201958374	Textura suave y sabor tradicional, ideal para untar en panes, preparar desayunos y complementar diversas recetas. Práctica y versátil para el uso diario en tu cocina.	Margarina MANTY Clásica Pote 300g	7.2	9.2	40	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780936376/nubix-market/productos/zcrbnycnfl4wearckug1.webp	\N
+152	7750526002943		Inka Chips - Sabor Sal de Mar	3.5	5	39	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959153/nubix-market/productos/bdrwq3rbkb6uicqhx55y.webp	\N
 44	6503921847415	Cereza Bing de gran tamaño, piel brillante y sabor intensamente dulce. Su pulpa firme y jugosa la convierte en una opción perfecta para disfrutar fresca, acompañar postres o dar un toque elegante a tablas de frutas y quesos.	Cereza Bing	4.8	6.4	14	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959680/nubix-market/productos/dnu7qp1xeaebwx3iee1r.jpg	\N
 117	154541553153		Obsesion de Chocolate	1	2	12	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954041/nubix-market/productos/j1ub8rep9hhxopeuzapx.jpg	\N
 103	8264501937846	Alta calidad y dulzor equilibrado, ideal para endulzar bebidas, preparar postres, repostería y diversas recetas. Práctica presentación para el uso diario en el hogar.	Azúcar Blanca BELL'S Bolsa 2Kg	6.5	9	29	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957811/nubix-market/productos/jj6jmz3eohdwkkl0pqph.jpg	\N
@@ -410,9 +412,9 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 38	5382917406650	Palta de textura cremosa y sabor suave, ideal para preparar desayunos, ensaladas, guacamole y diversas recetas. Rica en grasas saludables y nutrientes esenciales, es una excelente opción para una alimentación equilibrada.	Palta Fuerte	6.5	7	30	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959530/nubix-market/productos/pzptfgnm7miyqk8c8hac.jpg	\N
 54	7461839205506	Disfruta de una cerveza de sabor equilibrado y refrescante, elaborada con una cuidadosa combinación de malta y lúpulo. Ideal para compartir en reuniones, celebraciones o momentos especiales con amigos y familiares.	Cerveza Pilsen Callao Botella Retornable 630 ml	4.5	6	20	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959637/nubix-market/productos/skndeffhjjvasainas6l.jpg	\N
 29	6472839105542	Pera fresca, jugosa y naturalmente dulce, con una textura suave y refrescante. Ideal para disfrutar como snack, en ensaladas de frutas, postres o como complemento saludable en cualquier momento del día.	Pera Fresca	2.5	3.5	27	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959292/nubix-market/productos/xfdpci4yvedrmtkxsnne.jpg	\N
-6	7264519038427	Disfruta del sabor clásico de Coca-Cola Zero, una opción sin azúcar ideal para acompañar tus comidas o refrescarte en cualquier momento del día, con toda la intensidad y frescura que la caracteriza.	Gaseosa Coca-Cola Sin Azúcar 1.5 L	4.3	6	3	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780929518/nubix-market/productos/mtzwapxu8woko6avvdqu.webp	\N
 42	9731504826671		Coco Fresco	3.7	3	19	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959658/nubix-market/productos/wws3i0qnn3ehfyspoohf.jpg	\N
 167	7750670010238		Sporage Tropical 500ml	1.8	2.5	95	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781189168/nubix-market/productos/asecm5sk5gjh5iihajeb.webp	\N
+6	7264519038427	Disfruta del sabor clásico de Coca-Cola Zero, una opción sin azúcar ideal para acompañar tus comidas o refrescarte en cualquier momento del día, con toda la intensidad y frescura que la caracteriza.	Gaseosa Coca-Cola Sin Azúcar 1.5 L	4.3	6	1	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780929518/nubix-market/productos/mtzwapxu8woko6avvdqu.webp	\N
 100	6029183746509		Vinagre Blanco Florida 625ml	1.3	2.5	34	5	https://res.cloudinary.com/dzy3uggys/image/upload/v1780957653/nubix-market/productos/uo66nxbtr4hbkphlkedr.jpg	\N
 5	4839201746581	El clásico sabor refrescante en presentación de 3 litros, ideal para compartir en reuniones, celebraciones y comidas familiares. Disfrútala bien helada y vive su calidad en cada vaso.	Gaseosa Coca-Cola Sabor Original 3 L	8.5	11.9	51	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780928493/nubix-market/productos/wtt4bbualvpldtwfjyom.webp	\N
 9	3175092846712		Fanta Naranja 1.5L	4.9	5.2	16	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955077/nubix-market/productos/azbuqevuclutuijmqere.jpg	\N
@@ -420,18 +422,20 @@ COPY "public"."productos" ("id", "codigo", "descripcion", "nombre", "precio_comp
 168	7750670244954		Agua Cielo 625ml	1	1.5	98	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1781188960/nubix-market/productos/npc7q4iiq4sesfogqkqj.webp	\N
 28	1059384726617	Fresas frescas de color rojo intenso, sabor dulce y gran jugosidad. Ideales para consumir solas, preparar jugos, postres, ensaladas o acompañar yogures y cereales, aportando frescura y nutrientes a tu alimentación diaria.	Fresa Fresca	5.8	8.5	27	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959246/nubix-market/productos/xth7vqqshanymdrk15vi.jpg	\N
 115	2158411313		Chocolate Princesa	3	4	24	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780958591/nubix-market/productos/zphx7nse3ziv3iabxc3m.jpg	\N
-7	1958374620184	Agua pura y refrescante en una práctica presentación familiar. Ideal para la hidratación diaria, preparar alimentos y acompañar un estilo de vida saludable, brindando frescura y bienestar para toda la familia.	Agua San Luis Sin Gas Botella 7 L	3	6.19	4	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934744/nubix-market/productos/ltfjv55c3wrjmsyadprk.webp	\N
+7	1958374620184	Agua pura y refrescante en una práctica presentación familiar. Ideal para la hidratación diaria, preparar alimentos y acompañar un estilo de vida saludable, brindando frescura y bienestar para toda la familia.	Agua San Luis Sin Gas Botella 7 L	3	6.19	3	6	https://res.cloudinary.com/dzy3uggys/image/upload/v1780934744/nubix-market/productos/ltfjv55c3wrjmsyadprk.webp	\N
 70	2748391056829		Natillas Pura Crema	2.5	3.5	28	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780951455/nubix-market/productos/oarx0urayedolvorlaah.jpg	\N
 31	2537604918276		Melón Coquito	10.4	12	23	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959331/nubix-market/productos/zzzwevcxejfvny4lawf5.jpg	\N
 30	9182746501835	Mango de pulpa carnosa, sin hebras y con un dulzor intenso y aromático. Ideal para disfrutar fresco, preparar postres, helados artesanales o dar un toque exótico a ensaladas y ceviches.	Mango Kent	4.5	6.79	38	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959314/nubix-market/productos/ftedc3s0ouwt8e61jc6s.jpg	\N
 26	3905718264038	Plátano de seda de sabor dulce y textura suave, ideal para consumir como snack, preparar batidos, postres o complementar una alimentación equilibrada. Una fuente natural de energía perfecta para toda la familia.	Plátano de Seda	2.2	3.5	26	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959183/nubix-market/productos/ef0bwap9rf9tstfrzcsy.jpg	\N
+119	7622201764401		Mini Chips - Chips Ahoy!	2	2.5	49	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954176/nubix-market/productos/tv77awsc4kd4do8x1gfj.jpg	\N
 72	6194827501936		Yogurt Griego Natural	7.3	9.9	27	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780946568/nubix-market/productos/fvpj92dlfhturvjhjjz9.jpg	\N
 74	9901847362051	Leche especialmente formulada para apoyar el crecimiento infantil, enriquecida con vitaminas y minerales esenciales. Ideal para complementar una alimentación balanceada, aportando nutrición y energía en cada etapa del desarrollo.	Leche Evaporada Gloria Niños Lata 395 g	3.6	4.7	22	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780944552/nubix-market/productos/oj0jmdnt0vhizrqpwub3.jpg	\N
 75	1529038475618	Yogurt Kéfir Natural de textura cremosa y sabor suave, elaborado mediante fermentación natural. Ideal para disfrutar en el desayuno, acompañado de frutas y cereales, o como una opción nutritiva para cualquier momento del día.	Yogurt Kéfir Natural	5.4	8.5	47	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780943254/nubix-market/productos/z5c6tgpsh3ez1sjlozyc.jpg	\N
 69	5601948372058	Queso fresco elaborado con leche seleccionada, de sabor suave y textura firme. Ideal para desayunos, sándwiches, ensaladas y diversas preparaciones, aportando calidad y frescura para toda la familia.	Queso Fresco Pasteurizado Laive 300 g	11.5	15.9	21	3	https://res.cloudinary.com/dzy3uggys/image/upload/v1780952712/nubix-market/productos/iubo7fc1ft5dhprgb3kg.jpg	\N
+170	7750727014257		Chocochips Bimboletes 70g	2	3.5	50	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1784042045/nubix-market/productos/nbygfsswk7v4lernxy1o.webp	\N
 10	9628401753946	Kola Real 3L. Producto de calidad ideal para consumo diario. Elaborado o seleccionado bajo estándares adecuados para brindar una experiencia satisfactoria, sabor agradable y excelente rendimiento según su categoría.	Kola Real 3L	5.93	7.9	12	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1780955462/nubix-market/productos/pqvl05grpehauqtqcu3q.png	\N
-119	7750168000697		Mini Chips - Chips Ahoy!	2	2.5	49	4	https://res.cloudinary.com/dzy3uggys/image/upload/v1780954176/nubix-market/productos/tv77awsc4kd4do8x1gfj.jpg	\N
 25	7148203956471	Manzana fresca de textura crujiente y sabor equilibrado entre dulce y ácido. Ideal para consumir sola, preparar postres, ensaladas o complementar una alimentación saludable con su aporte natural de fibra y nutrientes.	Manzana Delicia	3.5	4.9	26	2	https://res.cloudinary.com/dzy3uggys/image/upload/v1780959072/nubix-market/productos/xneqtmwprcqehzqpkqee.jpg	\N
+171	7750182006088		Gaseosa Inca Kola Botella 600ml	2.5	3	100	1	https://res.cloudinary.com/dzy3uggys/image/upload/v1784042160/nubix-market/productos/shluxbp2vfcrdn3rzfon.webp	\N
 \.
 
 
@@ -444,6 +448,10 @@ COPY "public"."carrito_items" ("id", "cantidad", "carrito_id", "producto_id") FR
 355	3	3	7
 356	1	3	15
 357	1	3	25
+384	12	2	122
+385	3	2	7
+386	1	2	15
+387	1	2	25
 58	1	5	45
 344	1	11	5
 345	1	11	6
@@ -775,6 +783,17 @@ COPY "public"."notificaciones" ("id", "fecha", "leido", "mensaje", "tipo", "usua
 220	2026-07-07 17:43:47.811277	f	Pago confirmado para el pedido #57.	pago	1
 221	2026-07-07 17:46:40.828246	f	Estado del pedido #57 actualizado a EN_CAMINO.	pedido	1
 222	2026-07-07 17:46:44.827076	f	Estado del pedido #56 actualizado a ENTREGADO.	pedido	1
+223	2026-07-14 09:29:43.471448	f	Stock bajo detectado para Agua San Luis Sin Gas Botella 7 L (restante: 3).	stock	1
+224	2026-07-14 09:29:43.843102	f	Stock bajo detectado para Gaseosa Coca-Cola Sin Azúcar 1.5 L (restante: 2).	stock	1
+225	2026-07-14 09:29:44.560356	f	Nuevo pedido web creado (ID #58).	pedido	1
+226	2026-07-14 09:29:44.78568	f	Pago confirmado para el pedido #58.	pago	1
+227	2026-07-14 09:29:44.968003	f	Pedido Fast Lane #58 registrado. Código de recojo: 1BFF05DB	recojo	1
+228	2026-07-14 09:31:36.408446	f	Estado del pedido #58 actualizado a EN_PROCESO.	pedido	1
+229	2026-07-14 09:32:17.797203	f	Estado del pedido #58 actualizado a LISTO_PARA_RECOJO.	pedido	1
+230	2026-07-14 09:37:01.949876	f	Stock bajo detectado para Gaseosa Coca-Cola Sin Azúcar 1.5 L (restante: 1).	stock	1
+231	2026-07-14 09:37:02.660603	f	Nuevo pedido web creado (ID #59).	pedido	1
+232	2026-07-14 09:37:02.971499	f	Pago confirmado para el pedido #59.	pago	1
+233	2026-07-14 09:37:03.27985	f	Pedido Fast Lane #59 registrado. Código de recojo: 205CF6F9	recojo	1
 \.
 
 
@@ -840,6 +859,8 @@ COPY "public"."ventas" ("id", "canal", "codigo_recojo", "costo_envio", "direccio
 55	WEB	90E71364	0	\N	Ca. Raúl Rebagliati 170, La Victoria 15034, Peru	\N	m4m2ad.1010@gmail.com	APROBADO	PENDIENTE	2026-07-06	0.78	TARJETA	\N	Aldair	12351353525	6	FACTURA	FAST_LANE	6.78	3	\N
 57	WEB	\N	0	Lima Metropolitan Area, Peru	AV. JAVIER PRADO ESTE NRO. 6210 INT. 1201 URB. RIVERA DE MONTERRICO LIMA LIMA LA MOLINA	\N	tambo@gmail.com	APROBADO	EN_CAMINO	2026-07-07	14.94	TARJETA	\N	TIENDAS TAMBO S.A.C.	20563529378	114.9	FACTURA	DELIVERY	129.84	2	\N
 56	WEB	59DE939B	0	\N	\N	41578459	dannapuglianini@gmail.com	APROBADO	ENTREGADO	2026-07-07	5.46	YAPE	DANNA ABAD PUGLIANINI	\N	\N	41.99	BOLETA	FAST_LANE	47.45	2	\N
+58	WEB	1BFF05DB	0	\N	\N	40741616	andre5856545@gmail.com	APROBADO	LISTO_PARA_RECOJO	2026-07-14	1.58	TARJETA	ALEXANDER HERNANDO MAGALLANES MONTERO	\N	\N	12.19	BOLETA	FAST_LANE	13.77	15	\N
+59	WEB	205CF6F9	0	\N	VALLE REAL, Pje. Los Chasquis, Huancayo 12007, Peru	\N	andre5856545@gmail.com	APROBADO	PENDIENTE	2026-07-14	0.78	TARJETA	\N	Andre	54235324534	6	FACTURA	FAST_LANE	6.78	15	\N
 \.
 
 
@@ -905,6 +926,8 @@ COPY "public"."pagos" ("id", "estado_pago", "fecha_pago", "metodo_pago", "monto"
 55	APROBADO	2026-07-06 01:02:42.767653	TARJETA	6.78	55
 56	APROBADO	2026-07-07 16:20:09.388459	YAPE	47.45	56
 57	APROBADO	2026-07-07 17:43:45.184469	TARJETA	129.84	57
+58	APROBADO	2026-07-14 09:29:43.940197	TARJETA	13.77	58
+59	APROBADO	2026-07-14 09:37:02.148696	TARJETA	6.78	59
 \.
 
 
@@ -943,6 +966,10 @@ COPY "public"."password_reset_tokens" ("id", "codigo", "fecha_expiracion", "util
 28	855783	2026-07-05 14:34:18.349046	f	4
 29	700247	2026-07-05 14:34:43.733497	t	13
 30	641770	2026-07-05 15:28:51.722481	t	8
+31	540586	2026-07-14 14:24:06.081892	f	15
+32	884047	2026-07-14 09:27:39.405253	t	15
+33	948385	2026-07-14 10:13:21.062604	t	3
+34	679177	2026-07-14 10:45:16.821879	t	14
 \.
 
 
@@ -1277,6 +1304,9 @@ COPY "public"."venta_detalles" ("id", "cantidad", "precio_unitario", "subtotal",
 256	1	8.5	8.5	28	57
 257	1	3.5	3.5	58	57
 258	1	11.9	11.9	5	57
+259	1	6.19	6.19	7	58
+260	1	6	6	6	58
+261	1	6	6	6	59
 \.
 
 
@@ -1342,6 +1372,8 @@ COPY "public"."ventas_entrega" ("id", "codigo_recojo", "direccion", "distrito", 
 55	90E71364	\N	\N	\N	FAST_LANE	55
 56	59DE939B	\N	\N	\N	FAST_LANE	56
 57	\N	Lima Metropolitan Area, Peru	LA MOLINA	TIENDA TAMBO	DELIVERY	57
+58	1BFF05DB	\N	\N	\N	FAST_LANE	58
+59	205CF6F9	\N	\N	\N	FAST_LANE	59
 \.
 
 
@@ -1412,14 +1444,14 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- Name: carrito_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."carrito_id_seq"', 11, true);
+SELECT pg_catalog.setval('"public"."carrito_id_seq"', 12, true);
 
 
 --
 -- Name: carrito_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 380, true);
+SELECT pg_catalog.setval('"public"."carrito_items_id_seq"', 387, true);
 
 
 --
@@ -1447,28 +1479,28 @@ SELECT pg_catalog.setval('"public"."detalle_compras_id_seq"', 1, false);
 -- Name: favoritos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 451, true);
+SELECT pg_catalog.setval('"public"."favoritos_id_seq"', 466, true);
 
 
 --
 -- Name: notificaciones_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."notificaciones_id_seq"', 222, true);
+SELECT pg_catalog.setval('"public"."notificaciones_id_seq"', 233, true);
 
 
 --
 -- Name: pagos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."pagos_id_seq"', 57, true);
+SELECT pg_catalog.setval('"public"."pagos_id_seq"', 59, true);
 
 
 --
 -- Name: password_reset_tokens_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."password_reset_tokens_id_seq"', 30, true);
+SELECT pg_catalog.setval('"public"."password_reset_tokens_id_seq"', 34, true);
 
 
 --
@@ -1489,7 +1521,7 @@ SELECT pg_catalog.setval('"public"."producto_imagenes_id_seq"', 1, false);
 -- Name: productos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."productos_id_seq"', 169, true);
+SELECT pg_catalog.setval('"public"."productos_id_seq"', 171, true);
 
 
 --
@@ -1510,28 +1542,28 @@ SELECT pg_catalog.setval('"public"."roles_id_seq"', 5, true);
 -- Name: usuario_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."usuario_id_seq"', 14, true);
+SELECT pg_catalog.setval('"public"."usuario_id_seq"', 15, true);
 
 
 --
 -- Name: venta_detalles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."venta_detalles_id_seq"', 258, true);
+SELECT pg_catalog.setval('"public"."venta_detalles_id_seq"', 261, true);
 
 
 --
 -- Name: ventas_entrega_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."ventas_entrega_id_seq"', 57, true);
+SELECT pg_catalog.setval('"public"."ventas_entrega_id_seq"', 59, true);
 
 
 --
 -- Name: ventas_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."ventas_id_seq"', 57, true);
+SELECT pg_catalog.setval('"public"."ventas_id_seq"', 59, true);
 
 
 --
